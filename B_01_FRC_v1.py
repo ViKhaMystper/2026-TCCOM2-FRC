@@ -242,7 +242,7 @@ year = today.strftime("%Y")
 main_heading_string = make_statement(f"Fund Raising Calculator "
                                      f"({product_name}, {day}/ {month}/ {year})", "=")
 
-quantity_sting = f"Quantity being made: {quantity_made}"
+quantity_string = f"Quantity being made: {quantity_made}"
 variable_heading_string = make_statement("Variable Expenses ", "-")
 variable_subtotal_string = f"Variable Expenses Subtotal: ${variable_subtotal:.2f}"
 
@@ -258,7 +258,7 @@ else:
     fixed_subtotal_string = "Fixed Expenses Subtotal: $0.00"
 
 # List of strings to be outputted / written to file
-to_write = [main_heading_string, quantity_sting,
+to_write = [main_heading_string, quantity_string,
             "\n", variable_heading_string, variable_panda_string,
             variable_subtotal_string,
             "\n", fixed_heading_string, fixed_panda_string,
